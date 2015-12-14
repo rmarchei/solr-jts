@@ -1,4 +1,5 @@
 # Apache Solr - http://lucene.apache.org/solr/
+# JTS Topology Suite - http://sourceforge.net/projects/jts-topo-suite/
 #
 # docker run -d \
 #      --restart on-failure \
