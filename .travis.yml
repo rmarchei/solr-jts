@@ -13,7 +13,7 @@ services:
 
 before_install:
   - docker build -t rmarchei/solr-jts .
-  - docker run -d -p 127.0.0.1:8983:8983 --name solr rmarchei/solr -m 1g
+  - docker run -d -p 127.0.0.1:8983:8983 --name solr rmarchei/solr-jts -m 1g
   - docker ps -a
   - sleep 5
   - docker exec -it solr bin/solr create_core -c test_core
