@@ -9,7 +9,7 @@
 #      -m 8g
 #
 
-FROM rmarchei/solr:latest
+FROM rmarchei/solr:5.4.1
 MAINTAINER Ruggero Marchei <ruggero.marchei@daemonzone.net>
 
 env JTS_VER 1.13
