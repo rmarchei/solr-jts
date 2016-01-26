@@ -12,8 +12,8 @@
 FROM rmarchei/solr:5.4.1
 MAINTAINER Ruggero Marchei <ruggero.marchei@daemonzone.net>
 
-env JTS_VER 1.13
-env JTS_MD5 b5546b98b6373f796d093217f3f73b66
+env JTS_VER 1.14
+env JTS_MD5 34bf317e5a270b91824a4548b88d3656
 
 # install JTS library
 RUN curl -sLo /tmp/jts-$JTS_VER.zip http://sourceforge.net/projects/jts-topo-suite/files/jts/$JTS_VER/jts-$JTS_VER.zip/download && \
