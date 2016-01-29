@@ -1,5 +1,6 @@
 # Apache Solr - http://lucene.apache.org/solr/
 # JTS Topology Suite - http://sourceforge.net/projects/jts-topo-suite/
+# MySQL Connector - https://dev.mysql.com/downloads/connector/j/
 #
 # docker run -d \
 #      --restart on-failure \
@@ -29,5 +30,5 @@ RUN curl -sLo /tmp/jts-$JTS_VER.zip http://sourceforge.net/projects/jts-topo-sui
   rm -f /tmp/mysql-connector-java-$MYSQL_CONNECTOR.tar.gz && \
   chown -R $SOLR_USER. /opt/solr
 
-ENTRYPOINT ["/opt/solr/bin/solr", "start", "-f"]
+ENTRYPOINT ["/docker-entrypoint.sh"]
 CMD ["-m", "512m"]
