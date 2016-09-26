@@ -31,4 +31,4 @@ RUN curl -sLo /tmp/jts-$JTS_VER.zip http://sourceforge.net/projects/jts-topo-sui
   chown -R $SOLR_USER. /opt/solr
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
-CMD ["-m", "512m"]
+CMD ["-m", "1024m"]
